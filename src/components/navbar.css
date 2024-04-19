@@ -1,0 +1,145 @@
+.topimg{
+    width:100%;
+}
+.par{
+    position: relative;    
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+body{
+    overflow-x: hidden;
+}
+.par img{
+    position: absolute;
+    left:-47vw;
+    z-index:-2;
+    /* width:100%; */
+    height:22vw;
+    
+}
+.logo{
+    position:relative;
+    /* left:-350px; */
+    color:white;
+    font-size: 40px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.nav{
+    position: relative;
+    
+    display:flex;
+    justify-content: space-between;
+    gap:400px;
+    top:2vw;
+    /* left:2vw; */
+}
+.nav ul{
+    list-style-type: none;
+    display:flex;
+    position: relative;
+    right:10vw;
+    gap:20px;
+    top:1vw;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    opacity: 1;
+    font-weight: 500;
+}
+#hamb{
+    display:none;
+}
+.nav ul li a:hover{
+    border-bottom: 3px solid #0066b2;
+}
+@media only screen and (max-width: 1024px){
+    #hamb{
+        display:flex;
+        position:relative;
+        right:12vw;
+        cursor:pointer;
+        color:white;
+        z-index:3;
+        top:2vw;
+    }
+    .nav ul{
+        display:none;
+    }
+    .logo{
+        font-size:20px;
+    }
+    .hamburger-menu{
+        transition-duration: 0.3s;
+        .nav ul{
+            padding:20px;
+            background-color: #5D76A9;
+            position:absolute;
+            display:flex;
+            flex-direction: column;
+            z-index:2;
+            
+        }
+    }
+}
+.cont1 {
+    height: 135px;
+    width: 813px;
+    position: relative;
+    top: 210px;
+    /* left: 50%; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont1 ul{
+    display: flex;
+    list-style-type: none;
+    gap:35px;
+    position: relative;
+    top:15px;
+}
+.cont1 ul li a{
+    text-decoration: none;
+    color:black;
+}
+.cont1 ul li a:hover{
+    font-weight:500;
+    border-bottom: 3px solid #0066b2;
+}
+.search-btn {
+    position: relative;
+    display:flex;
+    top: 51px;
+    width: 793px;
+    height: 47px;
+    /* background-color: aqua; */
+    gap:50px;
+    align-items: center;
+}
+.search-btn p{
+    position: relative;
+    left:28px;
+}
+.search-btn input{
+    position: relative;
+    height:20px;
+    margin:0;
+    border:none;
+    padding-left:32px;
+    border-radius: 5px;
+}
+.search-btn input:focus{
+    border:none;
+}
+.search-btn i{
+    position:relative;
+    left:-320px;
+}
